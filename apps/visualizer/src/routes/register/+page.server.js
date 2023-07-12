@@ -17,5 +17,25 @@ export const actions = {
             throw error(500, 'Something went wrong')
         }
         throw redirect(303, '/login')
+    },
+
+    OAuth2: async({ cookies, url, locals }) => {
+        const authMethods = await locals.pb?.collection('users').listAuthMethods();
+        if(!authMethods){
+            return {
+                authProviders: '',
+            }
+        }
+
+        const redirectURL = `${url.origin}/gui`
+        const googleAuthProvider = authMethods.authProviders[0];
+        const authProviderRedirect = `${googleAuthProvider.authUrl}${redirectURL}`;
+
+        const state = googleAuthProvider.state;
+        const verifier = googleAuthProvider.codeVerifier;
+        cookies.set('state', state);
+        cookies.set('verifier', verifier);
+
+        throw redirect(302, authProviderRedirect)
     }
 }

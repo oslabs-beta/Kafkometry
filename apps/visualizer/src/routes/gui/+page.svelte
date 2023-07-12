@@ -26,5 +26,17 @@
       <div class="stat-value">9,000</div>
       <div class="stat-desc">↘︎ 90 (14%)</div>
     </div>
+
+    <script lang="js" context="module">
+      import Iframe from './Iframe.svelte';
+        let fullSlug;
+    
+        export async function load({ page }) {
+        fullSlug = `${page.params.slug}?${page.query.toString()}`;
+        console.log(`Loading: ${fullSlug}`);
+        return true
+      }
+    </script>
+    <iframe title="grafana" src="https://benjam26.grafana.net/d-solo/Ax-9LJsGz/kminion-cluster-dashboard-prometheus-exporter-for-apache-kafka?orgId=1&from=1689149946829&to=1689171546829&panelId=16" width="450" height="200" frameborder="0"></iframe>
     
   </div>
