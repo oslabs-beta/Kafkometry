@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  grafana: 
+    image: grafana/grafana-enterprise
+    container_name: grafana
+    restart: unless-stopped
+    ports:
+    - 3000:3000
+
+  prometheus:
+    image: prom/prometheus
+    hostname: prometheus
+    container_name: prometheus
+    ports:
+    - 9090:9090
+    restart: always
+   
