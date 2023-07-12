@@ -15,6 +15,9 @@
 		"src/routes/login/+page.server.js",
 		"src/routes/+layout.server.js"
 	],
+	"/oauth": [
+		"src/routes/oauth/+server.js"
+	],
 	"/register": [
 		"src/routes/register/+page.server.js",
 		"src/routes/+layout.server.js"

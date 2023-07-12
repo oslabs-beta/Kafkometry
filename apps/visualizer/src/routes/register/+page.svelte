@@ -36,4 +36,9 @@
             <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-5 w-full max-w-md border border-blue-700 rounded">Register</button>
         </div>
     </form>
+
+
 </div>
+
+<!-- src='/google_signin_buttons/web/1x
+                /btn_google_signin_dark_pressed_web.png' -->
