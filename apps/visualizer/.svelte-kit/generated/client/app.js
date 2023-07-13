@@ -16,7 +16,7 @@ export const server_loads = [0];
 export const dictionary = {
 		"/": [2],
 		"/cluster_profile": [~3],
-		"/gui": [~4],
+		"/gui": [4],
 		"/login": [~5],
 		"/register": [~6],
 		"/user_profile": [~7]
