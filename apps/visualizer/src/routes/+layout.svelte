@@ -7,6 +7,7 @@
     <nav class="navbar bg-base-100 border-b">
       <div class="flex-1">
         <a href="/" class="btn btn-ghost normal-case text-xl">Kafkometry</a>
+        <p>a lightweight Kafka metric visualizer for Svelte</p>
       </div>
       <div class="flex-none">
         {#if !data.user}
@@ -14,8 +15,8 @@
           <a href="/gui" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-5 border border-blue-700 rounded">Kafka Visualizer</a>
           <a href="/cluster_profile" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-5 border border-blue-700 rounded">Cluster Profile</a>
           <a href="/user_profile" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-5 border border-blue-700 rounded">User Profile</a>
-          <a href="/login" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-5 border border-blue-700 rounded">Login</a>
-          <a href="/register" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-5 border border-blue-700 rounded">Register</a>
+          <!-- <a href="/login" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-5 border border-blue-700 rounded">Login</a> -->
+          <!-- <a href="/register" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-5 border border-blue-700 rounded">Register</a> -->
         </div>
         {:else}
         <!-- This has to be refactored once we have login/signup logic built -->
