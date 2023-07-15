@@ -5,7 +5,7 @@
     "kafka.api.key": "2NVAT5GGQJJGXHKX",
     "kafka.api.secret": "y4hGgnoqsHj/ETA+bTH3yKx9b+TdaRwCcxr19Z2fmcC41fVk5lkYpxAGhOZ6/JYA",
     "kafka.topic": "users",
-    "output.data.format": "AVRO",
+    "output.data.format": "JSON",
     "quickstart": "USERS",
     "tasks.max": "1"
 }
