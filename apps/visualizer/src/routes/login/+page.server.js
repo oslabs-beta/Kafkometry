@@ -56,5 +56,27 @@ export const actions = {
         cookies.set('verifier', verifier);
 
         throw redirect(302, authProviderRedirect)
-    }
+    },
+
+    // CURRENTLY NOT WORKING
+    // OAuth2Github: async({ cookies, url, locals }) => {
+    //     const authMethods = await locals.pb?.collection('users').listAuthMethods();
+    //     if(!authMethods){
+    //         return {
+    //             authProviders: '',
+    //         }
+    //     }
+
+    //     const redirectURL = `${url.origin}/gui`
+    //     const githubAuthProvider = authMethods.authProviders[1];
+    //     const authProviderRedirect = `${githubAuthProvider.authUrl}${redirectURL}`;
+
+    //     const state = githubAuthProvider.state;
+    //     const verifier = githubAuthProvider.codeVerifier;
+    //     cookies.set('state', state);
+    //     cookies.set('verifier', verifier);
+
+    //     throw redirect(302, authProviderRedirect)
+    // }
+
 }

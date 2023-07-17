@@ -7,7 +7,7 @@
     <nav class="navbar bg-base-100 border-b">
       <div class="flex-1">
         <a href="/" class="btn btn-ghost normal-case text-xl">Kafkometry</a>
-        <p>a lightweight Kafka metric visualizer for Svelte</p>
+        <p>a lightweight Kafka metric visualizer made with SvelteKit</p>
       </div>
       <div class="flex-none">
         {#if !data.user}

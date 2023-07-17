@@ -4,13 +4,17 @@
 
 <div class="flex flex-col items-center h-full w-full">
     <h2 class="mt-2 text-center text-3xl font-bold tracking-tight text-base-content">
-        Login to your account
+        Welcome to Kafkometry
     </h2>
     <p class="text-center mt-1">
-        Or <a href="/register" class="text-secondary font-medium hover:cursor-pointer hover:underline">register</a> if you 
+        Please <a href="/register" class="text-secondary font-medium hover:cursor-pointer hover:underline">register</a> if you 
         do not have an account.
     </p>
-    <form action="?/login" method="POST" class="flex flex-col items-center space-y-2 w-full pt-4">
+    <p class="text-center mt-1">
+        Or <a href="/login" class="text-secondary font-medium hover:cursor-pointer hover:underline">sign in</a> if you 
+        already an account.
+    </p>
+    <!-- <form action="?/login" method="POST" class="flex flex-col items-center space-y-2 w-full pt-4">
    
         <div class="form-control w-full max-w-md">
             <label for="email" class="label font-medium pb-1">
@@ -28,9 +32,9 @@
         <div class="w-full max-w-md pt-2">
             <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-5 w-full max-w-md border border-blue-700 rounded">Login</button>
         </div>
-    </form>
+    </form> -->
 
-    <form class="auth-form" method="post" action="?/OAuth2">
+    <!-- <form class="auth-form" method="post" action="?/OAuth2">
         <div >
             <p>Or</p>
             <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-5 w-full max-w-md border border-blue-700 rounded">
@@ -43,6 +47,6 @@
             <span>You must verify your email before logging in.</span>
             </div>
         {/if}
-    </form>
+    </form> -->
 </div>
 
