@@ -1,0 +1,29 @@
+{
+	"/": [
+		"src/routes/+layout.server.js",
+		"src/routes/+layout.server.js"
+	],
+	"/cluster_profile": [
+		"src/routes/cluster_profile/+page.server.js",
+		"src/routes/+layout.server.js"
+	],
+	"/gui": [
+		"src/routes/+layout.server.js",
+		"src/routes/gui/+server.js"
+	],
+	"/login": [
+		"src/routes/login/+page.server.js",
+		"src/routes/+layout.server.js"
+	],
+	"/oauth": [
+		"src/routes/oauth/+server.js"
+	],
+	"/register": [
+		"src/routes/register/+page.server.js",
+		"src/routes/+layout.server.js"
+	],
+	"/user_profile": [
+		"src/routes/user_profile/+page.server.js",
+		"src/routes/+layout.server.js"
+	]
+}
