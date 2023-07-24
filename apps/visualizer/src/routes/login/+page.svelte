@@ -45,8 +45,7 @@
         {/if}
     </form>
 
-    <!-- CURRENTLY NOT WORKING -->
-    <form class="auth-form" method="post" action="?/OAuth2Github">
+    <form class="github" method="post" action="?/GithubLogin">
         <div >
             <p>Or</p>
             <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-5 w-full max-w-md border border-blue-700 rounded">
