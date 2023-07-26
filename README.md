@@ -55,12 +55,12 @@ Kafkometry is an Apache Kafkta metric visualizer. To get started you will need t
 Placeholder for tech-stack icons
 
 # Meet the Team
-|                       Name                         |     GitHub    |    LinkedIn   |
-| -------------------------------------------------- | ------------- | ------------- |
-| [**Benjamin Dunn**](https://github.com/benjam-26)  |[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/benjam-26)|[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](linkedin.com/in/benjamin-dunn-4803aa284/)|
+|                       Name                         |                                                                        GitHub                                                               |                                                                                    LinkedIn                                                                  |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [**Benjamin Dunn**](https://github.com/benjam-26)  |[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/benjam-26) |[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](linkedin.com/in/benjamin-dunn-4803aa284/)|
 |  [**Mitch Gruen**](https://github.com/mitchgruen)  |[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mitchgruen)|[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mitch-gruen/)|
-|  [**Alwin  Zhao**](https://github.com/alwin-zhao)  |[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alwin-zhao)|[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/alwin-zhao)|
-|  [**Vincent Do**](https://github.com/vincentydo)   |[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vincentydo)|[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](linkedin.com/in/vincentydo)|
+|  [**Alwin  Zhao**](https://github.com/alwin-zhao)  |[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alwin-zhao)|[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/alwin-zhao)          |
+|  [**Vincent Do**](https://github.com/vincentydo)   |[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vincentydo)|[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](linkedin.com/in/vincentydo)              |
 
 # License
 [#MIT License](https://choosealicense.com/licenses/mit/)
