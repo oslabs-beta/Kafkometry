@@ -1,0 +1,68 @@
+.teamContainer {
+  display: grid;
+  /* grid-template-columns: repeat(6, 1fr); */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1;
+  grid-template-areas: "member1 member2 member3 member4";
+  /* justify-content: center; */
+  max-width: 800px;
+}
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.member1 {
+  grid-area: member1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: greenyellow; */
+}
+
+.member2 {
+  grid-area: member2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+.member3 {
+  grid-area: member3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: yellow; */
+}
+.member4 {
+  grid-area: member4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: blue; */
+}
+
+.meetTheTeam {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+#teamImage {
+  max-width: 120px;
+}
+
+.icon {
+  margin: 7px 7px 7px 7px;
+  color: white;
+  font-size: 30px;
+}
+
+.icon:hover {
+  color: #DDDDDD;
+}
