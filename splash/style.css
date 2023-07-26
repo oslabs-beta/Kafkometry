@@ -1,0 +1,141 @@
+.body {
+  /* background: linear-gradient(#FFFFFF,#5693F2); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  /* grid-template-columns: repeat(6, 1fr); */
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 100vh);
+  grid-template-areas:
+      "pageArea1"
+      "pageArea2"
+      "pageArea3"
+      "pageArea4";
+  justify-content: center;
+}
+
+.subContainer {
+  width: min(100vw, 800px);
+}
+
+.pageArea1 {
+  grid-area: pageArea1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: greenyellow; */
+}
+
+.pageArea2 {
+  grid-area: pageArea2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color:red; */
+}
+
+.pageArea3 {
+  grid-area: pageArea3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: purple; */
+}
+
+.pageArea4 {
+  grid-area: pageArea4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+h1 {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-size: 100px;
+  color: #5693F2;
+  margin: 0px;
+  padding: 0px;
+  /* text-shadow: 0px 30px 0px #5693F2; */
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  margin: 0px;
+  padding: 0px;
+  color: #5693F2;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  margin: 0px;
+  padding: 0px;
+  color: #5693F2;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #444444;
+  margin: 0px;
+  padding: 0px;
+  font-size: 28px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image {
+  width: min(100vw, 1200px);
+  box-shadow: 10px, 5px, 5px, green;
+}
+
+#devImage {
+  width: 110px;
+}
+
+a {
+  color: #FFFFFF;
+}
+
+a:hover {
+  color: #CCCCCC;
+}
+
+
+
+
+
+
+
+/* font-family: 'Lexend Deca', sans-serif;
+font-family: 'Outfit', sans-serif; */
