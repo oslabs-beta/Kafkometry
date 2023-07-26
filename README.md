@@ -13,7 +13,8 @@ Placeholder for our OSP Logo
   
 # Features
 
-Placeholder for example GIF featuring our GUI
+![kafkometry_2](https://github.com/oslabs-beta/Kafkometry/assets/117921166/cd4f8b86-3404-49ce-98fe-15d0f4336581)
+
 * Live monitoring of key Apache Kafka metrics
 * Metric component customization using Grafana Desktop
 * Authentication using Google auth
@@ -30,6 +31,13 @@ Kafkometry is an Apache Kafkta metric visualizer. To get started you will need t
 7. [An instance of Pocketbase](https://pocketbase.io/)
    
 # Using the Application
+## First Steps
+   After cloning this repository to your local machine, make sure you have npm and node installed.
+   
+   npm install -g npm
+
+   https://nodejs.org/en/download
+
 ## Creating a cluster
    Placeholder for cluser instructions
    
@@ -40,7 +48,11 @@ Kafkometry is an Apache Kafkta metric visualizer. To get started you will need t
    Placeholder for Prometheus instructions
    
 ## Using Grafana Desktop
-   Ben will add instructions here
+   Download and install Grafana Desktop. Be sure to follow the correct instructions for your chosen operating system.
+   https://grafana.com/grafana/download?platform=linux
+
+   After you have Grafana Desktop installed, you will want to add your local instance of Prometheus as a data source. 
+   On your Grafana Desktop gui navigate to Home>>Connections>>Data Sources>>Prometheus and input http://localhost:9090/ (the default address) in the section under HTTP. Leave all other settings in the default state and hit "Save and Test" at the bottom of the page
    
 ## Import your Grafana Components
    Ben will add instructions here
@@ -49,10 +61,33 @@ Kafkometry is an Apache Kafkta metric visualizer. To get started you will need t
    Ben will add instructions here
    
 ## View your metrics
-   Ben will add instructions here
+   1. Active Connections
+      
+<img width="503" alt="Screenshot 2023-07-26 at 11 22 54 AM" src="https://github.com/oslabs-beta/Kafkometry/assets/117921166/394ee6b6-389a-41ee-ae63-f67777dbc54d">
+
+   2. Partition Count
+      
+<img width="223" alt="Screenshot 2023-07-26 at 11 24 39 AM" src="https://github.com/oslabs-beta/Kafkometry/assets/117921166/349d5b3e-ad30-4b4a-a38f-5bb8dd10e348">
+
+   3. Successful Authentications
+      
+<img width="497" alt="Screenshot 2023-07-26 at 11 24 56 AM" src="https://github.com/oslabs-beta/Kafkometry/assets/117921166/5d120872-9eed-4a25-b7f7-77826683442c">
+
+      
+   4. Bytes Sent
+      
+<img width="488" alt="Screenshot 2023-07-26 at 11 27 27 AM" src="https://github.com/oslabs-beta/Kafkometry/assets/117921166/647bd594-8a08-4e20-b370-bffc55da6eed">
    
+   5. Records Received
+      
+<img width="222" alt="Screenshot 2023-07-26 at 11 27 39 AM" src="https://github.com/oslabs-beta/Kafkometry/assets/117921166/ace69595-a562-422f-bd87-2d3477aecbfb">
+   
+   6. Bytes Received
+      
+<img width="495" alt="Screenshot 2023-07-26 at 11 27 48 AM" src="https://github.com/oslabs-beta/Kafkometry/assets/117921166/ea6ab0ef-b823-4f59-9152-fcff58c9e612">
+
 # Technologies Used
-Placeholder for tech-stack icons
+![my-skills](https://skillicons.dev/icons?i=svelte,tailwind,kafka,vite,prometheus,nodejs,netlify,grafana,&perline=4)
 
 # Meet the Team
 |                       Name                         |                                                                        GitHub                                                               |                                                                                    LinkedIn                                                                  |
