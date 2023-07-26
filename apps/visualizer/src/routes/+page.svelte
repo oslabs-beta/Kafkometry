@@ -1,4 +1,4 @@
-<!-- <script>
+<script>
     export let form
 </script>
 
@@ -13,7 +13,8 @@
     <p class="text-center mt-1">
         Or <a href="/login" class="text-secondary font-medium hover:cursor-pointer hover:underline">sign in</a> if you 
         already an account.
-    </p> -->
+    </p>
+
     <!-- <form action="?/login" method="POST" class="flex flex-col items-center space-y-2 w-full pt-4">
    
         <div class="form-control w-full max-w-md">
@@ -48,5 +49,5 @@
             </div>
         {/if}
     </form> -->
-<!-- </div> -->
+</div>
 
