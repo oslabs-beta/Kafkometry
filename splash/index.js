@@ -36,10 +36,10 @@ addEventListener("DOMContentLoaded", (event) => {
       ${99 - 99 * i + i * 18}, 
       ${194 - 194 * i + i * 24})`;
       gitRedirect.style.opacity = 1-(2*y)
-      kafkometryLogo.style.opacity = 1-(2*y);
+      kafkometryLogo.style.opacity = y;
     } else if(y>0.6 && y<0.8){
       gitRedirect.style.opacity = 0;
-      kafkometryLogo.style.opacity = 0;
+      kafkometryLogo.style.opacity = y;
       document.getElementById("gitLogo").style.filter="invert(0%)"
     } else if (y > 0.8) {
       let i = Math.min((y - 0.8) * 5, 1);
