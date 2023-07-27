@@ -54,7 +54,7 @@ Placeholder for our OSP Logo
 Currently, the flow of data in our application is mapped by the diagram above. Our data flow begins with the Kafka cluster hosted on Confluent Cloud, with a Datagen connector that produces mock messages and events to the cloud-hosted cluster. Confluent Cloud conveniently has their own Confluent Cloud Metrics API, which exposes cluster metrics for availability at a specific HTTP endpoint. Prometheus is run with a prometheus.yml file, which is configured to set up Prometheus to scrape that exposed endpoint at a specific interval or rate. We then configure Grafana to set our local Prometheus instance as a data source, which allows the data that Prometheus scraped from the cloud-cluster to be available for visualization within Grafana. We then customize and configure Grafana dashboards, and embed them into our frontend application via iframes.
 
 # Current Implementation
-As of launch, our product and demo is currently set up with local instances of Prometheus and Grafana set up with YAML files to connect to our Confluent CLoud cluster via a Confluent Cloud API Key and Secret. To run this demo on their respective machines we currently require users to:
+As of launch, our product and demo is currently set up with local instances of Prometheus and Grafana set up with YAML files to connect to our Confluent Cloud cluster via a Confluent Cloud API Key and Secret. To run this demo on their respective machines we currently require users to:
 
    1. Host their clusters on Confluent Cloud
    2. Configure a Metrics Viewer Role
