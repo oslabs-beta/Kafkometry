@@ -1,43 +1,11 @@
 import { error, redirect } from '@sveltejs/kit'
 // import { generateUsername } from '../../lib/utils.js'
 
-// this page will be for data/functionality of our register/login page
+// this page will be for data/functionality of login page
 export const actions = {
-    // register: async ({ locals, request }) => {
-    //     const body = Object.fromEntries(await request.formData())
 
-    //     let username = generateUsername(body.name.split(' ').join('')).toLocaleLowerCase()
-
-    //     try {
-    //         await locals.pb.collection('users').create({ username, ...body })
-    //         await locals.pb.collection('users').requestVerification(body.email)
-    //     } 
-    //     catch (err) {
-    //         console.log('Error: ', err)
-    //         throw error(500, 'Something went wrong')
-    //     }
-    //     throw redirect(303, '/login')
-    // },
     login: async ({ request, locals }) => {
-        // const provider = url.serachParams.get("provider")
-
-        // if (provider) {
-        //     const { data, error:err } = await locals.sb.auth.signInWithOAuth({
-        //         provider: provider
-        //     })
-
-        //     if (err) {
-        //         console.log(err)
-        //         return fail(400, {
-        //             message: "Something went wrong",
-        //         })
-        //     }
-
-        //     console.log(data)
-
-        //     throw redirect(303, data.url)
-        // }
-
+   
         const body = Object.fromEntries(await request.formData())
 
         try{
@@ -54,7 +22,7 @@ export const actions = {
             console.log('Error: ', err);
             throw error(500, 'Something went wrong logging in');
         }
-        throw redirect(303, '/')
+        throw redirect(303, '/gui')
     },
 
     OAuth2: async({ cookies, url, locals }) => {

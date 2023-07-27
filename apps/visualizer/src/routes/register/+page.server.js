@@ -6,11 +6,11 @@ export const actions = {
     register: async ({ locals, request }) => {
         const body = Object.fromEntries(await request.formData())
 
-        let username = generateUsername(body.name.split(' ').join('')).toLocaleLowerCase()
+        let username = generateUsername(body.name.split(' ').join('')).toLowerCase();
 
         try {
-            await locals.pb.collection('users').create({ username, ...body })
-            await locals.pb.collection('users').requestVerification(body.email)
+            await locals.pb.collection('users').create({ username, ...body });
+            await locals.pb.collection('users').requestVerification(body.email);
         } 
         catch (err) {
             console.log('Error: ', err)
