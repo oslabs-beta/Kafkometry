@@ -42,7 +42,8 @@
         </div>
         <Input id="name" label="Name" value={data?.user?.name} />
         <div class="w-full max-w-lg pt-3">
-            <button class="btn btn-primary w-full max-w-lg" type="submit">
+            <!-- <button class="btn btn-primary w-full max-w-lg" type="submit"> -->
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-7 w-full max-w-lg border border-blue-700 rounded" type="submit">
                 Update Profile
             </button>
         </div>
