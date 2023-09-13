@@ -1,21 +1,32 @@
 addEventListener("DOMContentLoaded", (event) => {
-  console.log('test');
+  // console.log('test');
   const [red, green, blue] = [255, 255, 255];
 
   const container = document.getElementById("body");
   container.style.background = "linear-gradient(135deg, rgb(255, 255, 255), rgb(38, 99, 194)";
+
+  const gitRedirect = document.getElementById('gitLogo')
+  gitRedirect.style.opacity = 0;
+  
+  const kafkometryLogo = document.getElementById('kafkometryLogo')
+  kafkometryLogo.style.opacity = 0;
 
   window.addEventListener("scroll", function () {
     let maxScrollValue =
       document.documentElement.scrollHeight - window.innerHeight;
     let currentScrollValue = document.documentElement.scrollTop;
     let y = currentScrollValue / maxScrollValue;
-    console.log(y);
-    if (y > 0 && y < 0.3) {
+    // console.log(y);
+    // console.log(y, gitRedirect.style.opacity)
+    if (y > 0 && y < 0.4) {
       container.style.background =
         "linear-gradient(135deg, rgb(255, 255, 255), rgb(38, 99, 194)";
+        gitRedirect.style.opacity = y;
+        // document.getElementById("gitLogo").style.filter="invert(0%)"
+        kafkometryLogo.style.opacity = y;
       // container.style.backgroundColor = `rgb(${255 * (1 - y)}, ${255 * (1 - y)}, 255)`;
-    } else if (y > 0.4 && y < 0.6) {
+    } 
+      else if (y > 0.4 && y < 0.6) {
       let i = Math.min((y - 0.4) * 5, 1);
       container.style.background = `linear-gradient(135deg, rgb(
       ${255 - 255 * i + i * 17}, 
@@ -24,6 +35,12 @@ addEventListener("DOMContentLoaded", (event) => {
       ${38 - 38 * i + i * 17}, 
       ${99 - 99 * i + i * 18}, 
       ${194 - 194 * i + i * 24})`;
+      gitRedirect.style.opacity = 1-(2*y)
+      kafkometryLogo.style.opacity = y;
+    } else if(y>0.6 && y<0.8){
+      gitRedirect.style.opacity = 0;
+      kafkometryLogo.style.opacity = y;
+      document.getElementById("gitLogo").style.filter="invert(0%)"
     } else if (y > 0.8) {
       let i = Math.min((y - 0.8) * 5, 1);
       container.style.background = `linear-gradient(135deg, rgb(
@@ -33,6 +50,9 @@ addEventListener("DOMContentLoaded", (event) => {
       ${17 + 38 * i}, 
       ${18 + 99 * i}, 
       ${24 + 194 * i})`;
+      gitRedirect.style.opacity = y;
+      document.getElementById("gitLogo").style.filter="invert(100%)"
+      kafkometryLogo.style.opacity = y;
     }
   });
 });
