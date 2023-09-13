@@ -115,7 +115,7 @@ p {
 }
 
 #image {
-  width: min(100vw, 1200px);
+  width: min(100vw, 1000px);
   box-shadow: 10px, 5px, 5px, green;
 }
 
@@ -131,8 +131,9 @@ a:hover {
   color: #CCCCCC;
 }
 
-
-
+.mitch:hover{
+  background-image: url('https://media.tenor.com/tWD3GjJcoHgAAAAC/spongebob-computer.gif');
+}
 
 
 
