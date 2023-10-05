@@ -1,7 +1,6 @@
 # Kafkometry
 Kafkometry is a lightweight Apache Kafka metric visualizer created using Svelte/SvelteKit.
 
-Placeholder for our OSP Logo
 
 # Table of Contents
 * [Features](https://github.com/oslabs-beta/Kafkometry#features)
