@@ -1,5 +1,6 @@
 import { error } from '@sveltejs/kit';
 
+// For updating username and avatar - stored in pocketbase database
 export const actions = {
     updateProfile: async ({ request, locals }) => {
         let data = await request.formData();
