@@ -1,5 +1,6 @@
 {
 	"/": [
+		"src/routes/+page.server.js",
 		"src/routes/+layout.server.js",
 		"src/routes/+layout.server.js"
 	],
@@ -13,6 +14,29 @@
 	],
 	"/login": [
 		"src/routes/login/+page.server.js",
+		"src/routes/+layout.server.js"
+	],
+	"/logout": [
+		"src/routes/logout/+server.js"
+	],
+	"/my/settings": [
+		"src/routes/my/settings/+page.server.js",
+		"src/routes/my/settings/+layout.server.js",
+		"src/routes/+layout.server.js",
+		"src/routes/my/settings/+layout.server.js",
+		"src/routes/+layout.server.js"
+	],
+	"/my/settings/account": [
+		"src/routes/my/settings/+layout.server.js",
+		"src/routes/+layout.server.js"
+	],
+	"/my/settings/profile": [
+		"src/routes/my/settings/profile/+page.server.js",
+		"src/routes/my/settings/+layout.server.js",
+		"src/routes/+layout.server.js"
+	],
+	"/my/settings/security": [
+		"src/routes/my/settings/+layout.server.js",
 		"src/routes/+layout.server.js"
 	],
 	"/oauth": [
