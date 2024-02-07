@@ -44,4 +44,20 @@
             </div>
         {/if}
     </form>
+
+    <!-- CURRENTLY NOT WORKING -->
+    <form class="auth-form" method="post" action="?/OAuth2Github">
+        <div >
+            <p>Or</p>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-5 w-full max-w-md border border-blue-700 rounded">
+                Sign in with Github
+            </button>
+        </div>
+        {#if form?.notVerified}
+            <div class="alert alert-error shadow-lg w-full ma-w-md">
+            <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            <span>You must verify your email before logging in.</span>
+            </div>
+        {/if}
+    </form>
 </div>
