@@ -22,6 +22,7 @@ services:
       KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
       KAFKA_LOG_DIRS: /tmp/kraft-combined-logs
       CLUSTER_ID: MkU3OEVBNTcwNTJENDM2Qk
+      KAFKA_OPTS: -javaagent:/opt/prometheus/jmx_prometheus_javaagent-0.15.0.jar=1234:/opt/prometheus/kafka_broker.yml
   schema-registry:
     image: confluentinc/cp-schema-registry:7.3.0
     hostname: schema-registry
