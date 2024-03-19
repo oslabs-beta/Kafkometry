@@ -1,11 +1,13 @@
 version: '3.8'
 services:
   grafana: 
-    image: grafana/grafana-enterprise
+    image: grafana/grafana-oss
     container_name: grafana
     restart: unless-stopped
     ports:
-    - 3000:3000
+      - 3000:3000
+    volumes:
+      - grafana_data:/var/lib/grafana
 
   prometheus:
     image: prom/prometheus
@@ -16,22 +18,27 @@ services:
     - 9090:9090
     restart: always
     # volumes:
-    #   -
+    #   - prometheus_data:/var/lib/prometheus
     # target: where we want prometheus to scrape data from
 
-  kafka:
-    image: confluentinc/cp-kafka:latest
+volumes:
+  grafana_data: {}
+  # prometheus_data: {}
+
+
+  # kafka:
+  #   image: confluentinc/cp-kafka:latest
     # depends_on:
     #   - zookeeper
-    container_name: kafka
-    ports: 
-    - 29092:29092
-    environment:
-      KAFKA_BROKER_ID : 1
-      KAFKA_ADVERTISED_LISTENERS : PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
-      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
-      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
-      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    # container_name: kafka
+    # ports: 
+    # - 29092:29092
+    # environment:
+    #   KAFKA_BROKER_ID : 1
+    #   KAFKA_ADVERTISED_LISTENERS : PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+    #   KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+    #   KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+    #   KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
 
   # zookeeper:
   #   image: confluentinc/cp-zookeeper:latest
