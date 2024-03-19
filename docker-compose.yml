@@ -1,4 +1,10 @@
 version: '3.8'
+volumes:
+  grafana_data: {}
+  prometheus_data: {}
+networks:
+  monitoring:
+    driver: bridge
 services:
   grafana: 
     image: grafana/grafana-oss
@@ -8,22 +14,23 @@ services:
       - 3000:3000
     volumes:
       - grafana_data:/var/lib/grafana
+    networks:
+      - monitoring
 
   prometheus:
     image: prom/prometheus
-    hostname: prometheus
     container_name: prometheus
-    user: root
     ports:
     - 9090:9090
     restart: always
-    # volumes:
-    #   - prometheus_data:/var/lib/prometheus
-    # target: where we want prometheus to scrape data from
+    volumes:
+      - prometheus_data:/var/lib/prometheus
+    networks:
+      - monitoring
+    # targets: 
+    #   ['localhost:3000']
 
-volumes:
-  grafana_data: {}
-  # prometheus_data: {}
+  
 
 
   # kafka:
